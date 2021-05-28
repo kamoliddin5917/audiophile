@@ -1,3 +1,27 @@
+/* manrope-regular - latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/manrope-v4-latin-regular.woff2") format("woff2"), url("../fonts/manrope-v4-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* manrope-500 - latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/manrope-v4-latin-500.woff2") format("woff2"), url("../fonts/manrope-v4-latin-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* manrope-700 - latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/manrope-v4-latin-700.woff2") format("woff2"), url("../fonts/manrope-v4-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
 *,
 * ::after,
 * ::before {
@@ -7,16 +31,26 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: "Manrope", sans-serif; }
 
 .container {
   max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 20px; }
+  padding: 0 15px; }
+
+.header .container, .nav__ul, .footer__bottom-right {
+  display: flex;
+  align-items: center; }
+
+.card__list, .box, .footer__bottom, .imgs .container, .section5 .container, .section6 .container, .product-detail-s4__ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -27,6 +61,95 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px; }
+
+.p-14 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: 1rem;
+  mix-blend-mode: normal; }
+  .p-14--section1 {
+    color: #fff;
+    opacity: 0.5;
+    margin-bottom: 2.4rem; }
+  .p-14--card {
+    margin-bottom: 1.6rem;
+    color: #d87d4a; }
+
+.p-15 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  mix-blend-mode: normal;
+  opacity: 0.5; }
+  .p-15--section1 {
+    width: 34.9rem;
+    color: #fff;
+    opacity: .75;
+    margin-bottom: 4rem; }
+  .p-15--footer-top {
+    margin-bottom: 5.6rem; }
+  .p-15--card {
+    margin-bottom: 4rem; }
+  .p-15--product-detail {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 7.9rem;
+    margin-bottom: 5.9rem;
+    color: inherit;
+    text-transform: uppercase; }
+  .p-15--product-detail-top {
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem; }
+
+.p-18 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: 1.28571px; }
+  .p-18--product-detail {
+    margin-bottom: 4.7rem;
+    margin-top: -0.8rem; }
+
+.h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 5.6rem;
+  line-height: 5.8rem;
+  letter-spacing: .2rem;
+  color: #fff;
+  margin-bottom: 2.4rem; }
+
+.h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4.4rem;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase; }
+  .h2__span {
+    color: #d87d4a; }
+  .h2--section6 {
+    margin-bottom: 3.2rem; }
+  .h2--card {
+    margin-bottom: 3.2rem; }
+  .h2--category {
+    color: #fff;
+    text-align: center; }
+
+.h3 {
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  letter-spacing: 1.14286px;
+  text-transform: uppercase; }
+
+.h4 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  letter-spacing: 1.71429px;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -332,3 +455,435 @@ template {
  */
 [hidden] {
   display: none; }
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: .1rem;
+  color: #fff;
+  background-color: #d87d4a;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase; }
+  .btn--section3 {
+    background-color: #000; }
+  .btn--section4 {
+    background-color: inherit;
+    color: inherit;
+    border: 0.1rem solid #000; }
+
+.card {
+  list-style: none; }
+  .card__text {
+    width: 44.5rem; }
+  .card__list:not(:last-child) {
+    margin-bottom: 16rem; }
+  .card__list::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/bts-big-black.png), url(../images/soya.png);
+    background-size: 34.9rem 38.6rem, 26.2rem 5.6rem;
+    background-position: center calc(100% - 10.8rem), center calc(100% - 8.1rem);
+    background-repeat: no-repeat;
+    background-color: #f1f1f1;
+    border-radius: .8rem;
+    width: 54rem;
+    height: 56rem; }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .card__list::before {
+        background-image: url(../images/bts-big-black@2x.png), url(../images/soya.png); } }
+  .card__list-1-s::before {
+    background-image: url(../images/kalonka.png), url(../images/soya.png);
+    background-size: 29.1rem 35rem, 26.2rem 5.6rem;
+    background-position: center calc(100% - 11.3rem), center calc(100% - 8.1rem); }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .card__list-1-s::before {
+        background-image: url(../images/kalonka@2x.png), url(../images/soya.png); } }
+  .card__list-1-e::before {
+    background-image: url(../images/airphone.png), url(../images/soya.png);
+    background-size: 36rem 36rem, 26.2rem 5.6rem;
+    background-position: center calc(100% - 10.9rem), center calc(100% - 8.1rem); }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .card__list-1-e::before {
+        background-image: url(../images/airphone@2x.png), url(../images/soya.png); } }
+  .card__list-2 {
+    flex-direction: row-reverse; }
+    .card__list-2::before {
+      background-image: url(../images/bts-black-1.png), url(../images/soya.png);
+      background-size: 29.6rem 38.5rem, 26.2rem 5.6rem;
+      background-position: center calc(100% - 10.9rem), center calc(100% - 8.1rem); }
+      @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+        .card__list-2::before {
+          background-image: url(../images/bts-black-1@2x.png), url(../images/soya.png); } }
+    .card__list-2-s::before {
+      background-image: url(../images/kalonka2.png), url(../images/soya.png);
+      background-size: 26.8rem 38.5rem, 26.2rem 5.6rem;
+      background-position: center calc(100% - 10.9rem), center calc(100% - 8.1rem); }
+      @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+        .card__list-2-s::before {
+          background-image: url(../images/kalonka2@2x.png), url(../images/soya.png); } }
+  .card__list-3::before {
+    background-image: url(../images/bts-big-white.png), url(../images/soya.png);
+    background-size: 37.3rem 38.9rem, 26.2rem 5.6rem;
+    background-position: center calc(100% - 8.8rem), center calc(100% - 8.1rem); }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .card__list-3::before {
+        background-image: url(../images/bts-big-white@2x.png), url(../images/soya.png); } }
+  .card__list-h1::before {
+    background-image: url(../images/bts-black-1.png), url(../images/soya.png);
+    background-size: 29.6rem 38.5rem, 26.2rem 5.6rem;
+    background-position: center calc(100% - 10.9rem), center calc(100% - 8.1rem); }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .card__list-h1::before {
+        background-image: url(../images/bts-black-1@2x.png), url(../images/soya.png); } }
+  .card__list-s2::before {
+    background-image: url(../images/kalonka2.png), url(../images/soya.png);
+    background-size: 26.8rem 38.5rem, 26.2rem 5.6rem;
+    background-position: center calc(100% - 10.9rem), center calc(100% - 8.1rem); }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .card__list-s2::before {
+        background-image: url(../images/kalonka2@2x.png), url(../images/soya.png); } }
+
+.box__list {
+  list-style: none; }
+
+.box__link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  border-radius: .8rem;
+  padding: 11.6rem 10.9rem 3rem 10.9rem;
+  color: #000;
+  text-align: center;
+  position: relative;
+  background-image: url("../images/soya-box.png");
+  background-size: 12.2rem 1.8rem;
+  background-repeat: no-repeat;
+  background-position: center calc(100% - 11.4rem); }
+  .box__link::before {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .box__link-1::before {
+    background-image: url(../images/bts-black-1.png);
+    width: 12.3rem;
+    height: 16rem;
+    background-position: center;
+    position: absolute;
+    bottom: 12.4rem;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .box__link-1::before {
+        background-image: url(../images/bts-black-1@2x.png); } }
+  .box__link-2::before {
+    background-image: url(../images/kalonka.png);
+    width: 12.11rem;
+    height: 14.6rem;
+    position: absolute;
+    bottom: 13rem;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .box__link-2::before {
+        background-image: url(../images/kalonka@2x.png); } }
+  .box__link-3::before {
+    background-image: url(../images/airphone.png);
+    width: 17.8rem;
+    height: 16.1rem;
+    position: absolute;
+    bottom: 12.8rem;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .box__link-3::before {
+        background-image: url(../images/airphone@2x.png); } }
+
+.box__span-1 {
+  display: block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: 1.28571px;
+  margin-bottom: 1.5rem; }
+
+.box__span-2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .box__span-2::after {
+    content: "";
+    display: inline-block;
+    width: 0.8rem;
+    height: 1.2rem;
+    background-image: url("../images/arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: .9rem; }
+
+.header {
+  background-color: #0E0E0E;
+  color: #fff; }
+  .header .container {
+    padding-top: 3.2rem;
+    padding-bottom: 3.6rem;
+    border-bottom: 0.1rem solid rgba(255, 252, 252, 0.2); }
+  .header__logo {
+    display: inline-block;
+    width: 14.3rem;
+    height: 2.5rem; }
+  .header__korzinka {
+    display: inline-block;
+    width: 2.3rem;
+    height: 2rem;
+    margin-left: auto; }
+
+.nav {
+  margin-left: 19.7rem; }
+  .nav__ul {
+    list-style: none; }
+  .nav__list:not(:first-child) {
+    margin-left: 3.4rem; }
+  .nav__link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    letter-spacing: .2rem; }
+
+.footer {
+  background-color: #101010;
+  color: #fff;
+  padding: 7.5rem 0 4.8rem 0; }
+  .footer__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer__bottom {
+    margin-top: 3.6rem; }
+    .footer__bottom-left {
+      width: 54rem; }
+    .footer__bottom-right {
+      list-style: none; }
+    .footer__bottom-list:not(:first-child) {
+      margin-left: 1.6rem; }
+
+.imgs {
+  margin-bottom: 16rem; }
+  .imgs__left {
+    width: 44.5rem; }
+    .imgs__left-img:not(:first-child) {
+      margin-top: 3.2rem; }
+    .imgs__left-img {
+      border-radius: .8rem;
+      display: inline-block; }
+  .imgs__right {
+    display: inline-block;
+    width: 63.5rem;
+    border-radius: .8rem; }
+
+body {
+  background-color: #fafafa;
+  color: #000; }
+
+.section1 {
+  background-color: #0E0E0E; }
+  .section1 .container {
+    background-image: url("../images/bts-black.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-top: 12.8rem;
+    padding-bottom: 15.1rem; }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376), (min-width: 2000px) {
+      .section1 .container {
+        background-image: url(../images/bts-black@2x.png); } }
+  .section1__text {
+    width: 39.6rem; }
+
+.section2 {
+  padding-top: 20rem; }
+
+.section3 {
+  margin-top: 16.8rem; }
+  .section3-1 {
+    background-color: #d87d4a;
+    border-radius: .8rem;
+    width: 100%;
+    padding-top: 13.3rem;
+    padding-bottom: 12.4rem;
+    background-image: url(../images/kalonka.png), url(../images/section-2.png);
+    background-repeat: no-repeat;
+    background-size: 41rem 49.3rem, contain;
+    background-position: calc(0% + 11.7rem) calc(100% + 2.9rem), left center; }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .section3-1 {
+        background-image: url(../images/kalonka@2x.png), url(../images/section-2.png); } }
+  .section3__text {
+    width: 34.9rem;
+    margin-left: auto;
+    margin-right: 9.5rem; }
+
+.section4 {
+  margin-top: 4.8rem; }
+  .section4__box {
+    background-image: url(../images/bg-kalonka.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: .8rem;
+    overflow: hidden; }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .section4__box {
+        background-image: url(../images/bg-kalonka@2x.png); } }
+  .section4__text {
+    margin: 10.1rem 0 10.1rem 9.5rem; }
+  .section4__p-28 {
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+    letter-spacing: .2rem;
+    margin-bottom: 3.2rem; }
+
+.section5 {
+  margin-top: 4.8rem; }
+  .section5 .container::before {
+    content: "";
+    display: inline-block;
+    width: 54rem;
+    height: 32rem;
+    background-image: url("../images/bg-airphone.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .section5 .container::before {
+        background-image: url(../images/bg-airphone@2x.png); } }
+  .section5__box {
+    background-color: #f1f1f1;
+    border: .1rem solid transparent;
+    border-radius: .8rem;
+    width: 54rem; }
+
+.section6 {
+  margin: 20rem 0; }
+  .section6--category {
+    margin: 16rem 0; }
+  .section6 .container::after {
+    content: "";
+    display: inline-block;
+    width: 54rem;
+    height: 58.8rem;
+    background-image: url("../images/jek.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: .8rem; }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+      .section6 .container::after {
+        background-image: url(../images/jek@2x.png); } }
+  .section6__box {
+    width: 44.5rem; }
+
+.category-header {
+  background-color: #000; }
+  .category-header-top {
+    background-color: #000; }
+  .category-header .container {
+    padding-top: 9.8rem;
+    padding-bottom: 9.7rem; }
+
+.headphones-section1 {
+  margin-top: 16rem;
+  margin-bottom: 24rem; }
+
+.product-detail {
+  margin-top: 12rem;
+  margin-bottom: 16rem; }
+  .product-detail .container {
+    display: flex;
+    justify-content: space-between; }
+  .product-detail__left {
+    width: 63.5rem; }
+  .product-detail__right {
+    width: 35rem; }
+  .product-detail__ul {
+    margin-top: 3.2rem;
+    list-style: none; }
+  .product-detail__list:not(:last-child) {
+    margin-bottom: 0.8rem; }
+  .product-detail__link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block; }
+    .product-detail__link-span {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      color: #d87d4a;
+      margin-right: 2.1rem; }
+      .product-detail__link-span-1 {
+        margin-right: 2.4rem; }
+  .product-detail-s4 {
+    text-align: center; }
+    .product-detail-s4__ul {
+      list-style: none;
+      margin-bottom: 24rem;
+      margin-top: 6.4rem; }
+    .product-detail-s4__list {
+      width: 35rem; }
+      .product-detail-s4__list::before {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 31.8rem;
+        background-image: url("../images/bts-black-1.png");
+        background-size: 14.8rem 19.3rem;
+        background-repeat: no-repeat;
+        background-position: center calc(100% - 6.3rem);
+        background-color: #f1f1f1;
+        border-radius: .8rem;
+        margin-bottom: 4rem; }
+        @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+          .product-detail-s4__list::before {
+            background-image: url(../images/bts-black-1@2x.png); } }
+      .product-detail-s4__list-2::before {
+        background-image: url(../images/bts-big-white.png);
+        background-size: 19rem 19.9rem;
+        background-position: center calc(100% - 6rem); }
+        @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+          .product-detail-s4__list-2::before {
+            background-image: url(../images/bts-big-white@2x.png); } }
+      .product-detail-s4__list-3::before {
+        background-image: url(../images/kalonka.png);
+        background-size: 14.3rem 17.2rem;
+        background-position: center calc(100% - 7.3rem); }
+        @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+          .product-detail-s4__list-3::before {
+            background-image: url(../images/kalonka@2x.png); } }
+      .product-detail-s4__list-h2::before {
+        background-image: url(../images/bts-big-black.png);
+        background-size: 17.5rem 19.4rem;
+        background-position: center calc(100% - 6.2rem); }
+        @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+          .product-detail-s4__list-h2::before {
+            background-image: url(../images/bts-big-black@2x.png); } }
+      .product-detail-s4__list-s1::before {
+        background-image: url(../images/kalonka2.png);
+        background-size: 13.3rem 19.1rem;
+        background-position: center calc(100% - 6.4rem); }
+        @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
+          .product-detail-s4__list-s1::before {
+            background-image: url(../images/kalonka2@2x.png); } }

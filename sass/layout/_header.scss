@@ -1,0 +1,26 @@
+.header {
+  background-color: #0E0E0E;
+  color: $color-white;
+
+  & .container {
+    @extend %aligncenter;
+    padding-top: 3.2rem;
+    padding-bottom: 3.6rem;
+    border-bottom: .1rem solid rgba(255, 252, 252, .2);
+  }
+
+
+  &__logo {
+    display: inline-block;
+    width: 14.3rem;
+    height: 2.5rem;
+  }
+
+  &__korzinka {
+    display: inline-block;
+    width: 2.3rem;
+    height: 2rem;
+    margin-left: auto;
+  }
+}
+

@@ -1,0 +1,131 @@
+.product-detail {
+  margin-top: 12rem;
+  margin-bottom: 16rem;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 63.5rem;
+  }
+
+  &__right {
+    width: 35rem;
+  }
+
+  &__ul {
+    margin-top: 3.2rem;
+    list-style: none;
+  }
+
+  &__list:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+    &-span {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      color: $color-coral-dark;
+      margin-right: 2.1rem;
+
+      &-1 {
+        margin-right: 2.4rem;
+      }
+    }
+  }
+
+  &-s4 {
+    text-align: center;
+
+    &__ul {
+      list-style: none;
+      margin-bottom: 24rem;
+      margin-top: 6.4rem;
+      @extend %jsb;
+
+    }
+
+    &__list {
+      width: 35rem;
+
+      &::before {
+        @include badimg(100%, 31.8rem, '../images/bts-black-1.png', 14.8rem 19.3rem) {
+          background-position: center calc(100% - 6.3rem);
+          background-color: $color-white-f1;
+          border-radius: .8rem;
+
+          @media only screen and(min-resolution:192dpi)and(min-width:376px),
+          (min-width:2000px) {
+            background-image: url(../images/bts-black-1@2x.png);
+          }
+        }
+
+        margin-bottom: 4rem;
+      }
+
+      &-2 {
+        &::before {
+          background-image: url(../images/bts-big-white.png);
+          background-size: 19rem 19.9rem;
+          background-position: center calc(100% - 6rem);
+
+          @media only screen and(min-resolution:192dpi)and(min-width:376px),
+          (min-width:2000px) {
+            background-image: url(../images/bts-big-white@2x.png);
+          }
+        }
+
+
+      }
+
+      &-3 {
+        &::before {
+          background-image: url(../images/kalonka.png);
+          background-size: 14.3rem 17.2rem;
+          background-position: center calc(100% - 7.3rem);
+
+          @media only screen and(min-resolution:192dpi)and(min-width:376px),
+          (min-width:2000px) {
+            background-image: url(../images/kalonka@2x.png);
+          }
+        }
+      }
+
+      &-h2 {
+
+        &::before {
+          background-image: url(../images/bts-big-black.png);
+          background-size: 17.5rem 19.4rem;
+          background-position: center calc(100% - 6.2rem);
+
+          @media only screen and(min-resolution:192dpi)and(min-width:376px),
+          (min-width:2000px) {
+            background-image: url(../images/bts-big-black@2x.png);
+          }
+        }
+      }
+
+      &-s1 {
+        &::before {
+          background-image: url(../images/kalonka2.png);
+          background-size: 13.3rem 19.1rem;
+          background-position: center calc(100% - 6.4rem);
+
+          @media only screen and(min-resolution:192dpi)and(min-width:376px),
+          (min-width:2000px) {
+            background-image: url(../images/kalonka2@2x.png);
+          }
+        }
+      }
+    }
+  }
+}

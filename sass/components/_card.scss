@@ -1,0 +1,131 @@
+.card {
+  list-style: none;
+
+  &__text {
+    width: 44.5rem;
+  }
+
+  &__list:not(:last-child) {
+    margin-bottom: 16rem;
+  }
+
+  &__list {
+    @extend %jsb;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      background-image: url(../images/bts-big-black.png), url(../images/soya.png);
+      background-size: 34.9rem 38.6rem, 26.2rem 5.6rem;
+      background-position: center calc(100% - 10.8rem), center calc(100% - 8.1rem);
+      background-repeat: no-repeat;
+      background-color: $color-white-f1;
+      border-radius: .8rem;
+      width: 54rem;
+      height: 56rem;
+
+      @media only screen and(min-resolution:192dpi)and(min-width:376px),
+      (min-width:2000px) {
+        background-image: url(../images/bts-big-black@2x.png), url(../images/soya.png);
+      }
+    }
+
+    &-1 {
+      &-s {
+        &::before {
+          background-image: url(../images/kalonka.png), url(../images/soya.png);
+          background-size: 29.1rem 35rem, 26.2rem 5.6rem;
+          background-position: center calc(100% - 11.3rem), center calc(100% - 8.1rem);
+
+          @media only screen and(min-resolution:192dpi)and(min-width:376px),
+          (min-width:2000px) {
+            background-image: url(../images/kalonka@2x.png), url(../images/soya.png);
+          }
+        }
+      }
+
+      &-e {
+        &::before {
+          background-image: url(../images/airphone.png), url(../images/soya.png);
+          background-size: 36rem 36rem, 26.2rem 5.6rem;
+          background-position: center calc(100% - 10.9rem), center calc(100% - 8.1rem);
+
+          @media only screen and(min-resolution:192dpi)and(min-width:376px),
+          (min-width:2000px) {
+            background-image: url(../images/airphone@2x.png), url(../images/soya.png);
+          }
+        }
+      }
+    }
+
+
+
+    &-2 {
+      flex-direction: row-reverse;
+
+      &::before {
+        background-image: url(../images/bts-black-1.png), url(../images/soya.png);
+        background-size: 29.6rem 38.5rem, 26.2rem 5.6rem;
+        background-position: center calc(100% - 10.9rem), center calc(100% - 8.1rem);
+
+        @media only screen and(min-resolution:192dpi)and(min-width:376px),
+        (min-width:2000px) {
+          background-image: url(../images/bts-black-1@2x.png), url(../images/soya.png);
+        }
+      }
+
+      &-s {
+        &::before {
+          background-image: url(../images/kalonka2.png), url(../images/soya.png);
+          background-size: 26.8rem 38.5rem, 26.2rem 5.6rem;
+          background-position: center calc(100% - 10.9rem), center calc(100% - 8.1rem);
+
+          @media only screen and(min-resolution:192dpi)and(min-width:376px),
+          (min-width:2000px) {
+            background-image: url(../images/kalonka2@2x.png), url(../images/soya.png);
+          }
+        }
+      }
+    }
+
+    &-3 {
+      &::before {
+        background-image: url(../images/bts-big-white.png), url(../images/soya.png);
+        background-size: 37.3rem 38.9rem, 26.2rem 5.6rem;
+        background-position: center calc(100% - 8.8rem), center calc(100% - 8.1rem);
+
+        @media only screen and(min-resolution:192dpi)and(min-width:376px),
+        (min-width:2000px) {
+          background-image: url(../images/bts-big-white@2x.png), url(../images/soya.png);
+        }
+      }
+    }
+
+    &-h1 {
+      &::before {
+        background-image: url(../images/bts-black-1.png), url(../images/soya.png);
+        background-size: 29.6rem 38.5rem, 26.2rem 5.6rem;
+        background-position: center calc(100% - 10.9rem), center calc(100% - 8.1rem);
+
+        @media only screen and(min-resolution:192dpi)and(min-width:376px),
+        (min-width:2000px) {
+          background-image: url(../images/bts-black-1@2x.png), url(../images/soya.png);
+        }
+      }
+
+    }
+
+    &-s2 {
+      &::before {
+        background-image: url(../images/kalonka2.png), url(../images/soya.png);
+        background-size: 26.8rem 38.5rem, 26.2rem 5.6rem;
+        background-position: center calc(100% - 10.9rem), center calc(100% - 8.1rem);
+
+        @media only screen and(min-resolution:192dpi)and(min-width:376px),
+        (min-width:2000px) {
+          background-image: url(../images/kalonka2@2x.png), url(../images/soya.png);
+        }
+      }
+    }
+  }
+}

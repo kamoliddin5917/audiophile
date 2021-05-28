@@ -1,0 +1,152 @@
+body {
+  background-color: $color-white-fa;
+  color: $color-black;
+}
+
+// SECTION 1
+
+.section1 {
+  background-color: #0E0E0E;
+
+  & .container {
+    @include bacimg('../images/bts-black.png', contain) {
+      background-position: right center;
+    }
+
+    @media only screen and(min-resolution:192dpi)and(min-width:376),
+    (min-width:2000px) {
+      background-image: url(../images/bts-black@2x.png);
+    }
+
+    padding-top: 12.8rem;
+    padding-bottom: 15.1rem;
+  }
+
+  &__text {
+    width: 39.6rem;
+  }
+}
+
+// SECTION 2
+
+.section2 {
+  padding-top: 20rem;
+}
+
+// SECTION 3
+
+.section3 {
+  margin-top: 16.8rem;
+
+  &-1 {
+    background-color: $color-coral-dark;
+    border-radius: .8rem;
+    width: 100%;
+    padding-top: 13.3rem;
+    padding-bottom: 12.4rem;
+
+    background-image: url(../images/kalonka.png), url(../images/section-2.png);
+    background-repeat: no-repeat;
+    background-size: 41rem 49.3rem, contain;
+    background-position: calc(0% + 11.7rem) calc(100% + 2.9rem), left center;
+
+    @media only screen and(min-resolution:192dpi)and(min-width:376px),
+    (min-width:2000px) {
+      background-image: url(../images/kalonka@2x.png), url(../images/section-2.png);
+    }
+  }
+
+  &__text {
+    width: 34.9rem;
+    margin-left: auto;
+    margin-right: 9.5rem;
+  }
+}
+
+// SECTION 4
+
+.section4 {
+  margin-top: 4.8rem;
+
+  &__box {
+    background-image: url(../images/bg-kalonka.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: .8rem;
+    overflow: hidden;
+
+    @media only screen and(min-resolution:192dpi)and(min-width:376px),
+    (min-width:2000px) {
+      background-image: url(../images/bg-kalonka@2x.png);
+    }
+  }
+
+  &__text {
+    margin: 10.1rem 0 10.1rem 9.5rem;
+  }
+
+  &__p-28 {
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+    letter-spacing: .2rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
+// SECTION 5
+
+.section5 {
+  margin-top: 4.8rem;
+
+  & .container {
+    &::before {
+      @include badimg(54rem, 32rem, '../images/bg-airphone.png');
+
+      @media only screen and(min-resolution:192dpi)and(min-width:376px),
+      (min-width:2000px) {
+        background-image: url(../images/bg-airphone@2x.png);
+      }
+    }
+
+    @extend %jsb;
+  }
+
+  &__box {
+    background-color: $color-white-f1;
+    border: .1rem solid transparent;
+    border-radius: .8rem;
+    width: 54rem;
+  }
+}
+
+// SECTION 6
+
+.section6 {
+  margin: 20rem 0;
+
+  &--category {
+    margin: 16rem 0;
+  }
+
+  & .container {
+    &::after {
+      @include badimg(54rem, 58.8rem, '../images/jek.png');
+
+      @media only screen and(min-resolution:192dpi)and(min-width:376px),
+      (min-width:2000px) {
+        background-image: url(../images/jek@2x.png);
+      }
+
+      border-radius: .8rem;
+    }
+
+    @extend %jsb;
+  }
+
+  &__box {
+    width: 44.5rem;
+  }
+}

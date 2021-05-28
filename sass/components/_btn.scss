@@ -1,0 +1,22 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: .1rem;
+  color: $color-white;
+  background-color: $color-coral-dark;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+
+  &--section3 {
+    background-color: $color-black;
+  }
+
+  &--section4 {
+    background-color: inherit;
+    color: inherit;
+    border: .1rem solid $color-black;
+  }
+}

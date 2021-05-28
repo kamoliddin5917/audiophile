@@ -1,4 +1,5 @@
 // Abstracts
+@import './abstracts/fonts';
 @import './abstracts/variables';
 @import './abstracts/utils';
 @import './abstracts/mixins';
@@ -13,6 +14,7 @@
 @import './components/btn';
 @import './components/card';
 @import './components/dropdown';
+@import './components/box';
 
 // LAYOUT
 @import './layout/header';
@@ -20,9 +22,13 @@
 @import './layout/footer';
 @import './layout/forms';
 @import './layout/list';
+@import './layout/imgs';
 
 // PAGES
 @import './pages/home';
+@import './pages/headphones';
+@import './pages/product-detail';
+@import './pages/headphones-1';
 @import './pages/about';
 @import './pages/contact';
 

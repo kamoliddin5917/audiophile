@@ -1,0 +1,29 @@
+.footer {
+  background-color: $color-black-hungry;
+  color: $color-white;
+  padding: 7.5rem 0 4.8rem 0;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+    @extend %jsb;
+    margin-top: 3.6rem;
+
+    &-left {
+      width: 54rem;
+    }
+
+    &-right {
+      @extend %aligncenter;
+      list-style: none;
+    }
+
+    &-list:not(:first-child) {
+      margin-left: 1.6rem;
+    }
+  }
+}
