@@ -11,18 +11,20 @@
 
 <body>
   <!-- HEADER -->
-  <header class="header category-header-top">
+  <header class="header">
     <div class="container">
-      <a href="#" class="header__logo"><img src="./images/logo.png" alt="logo" class="header__logo-img"></a>
+      <a href="#" class="header__logo"><img src="./images/logo.png"
+          srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" alt="logo" class="header__logo-img"></a>
       <nav class="nav">
         <ul class="nav__ul">
-          <li class="nav__list"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__list"><a href="#" class="nav__link">HEADPHONES</a></li>
-          <li class="nav__list"><a href="#" class="nav__link">SPEAKERS</a></li>
-          <li class="nav__list"><a href="#" class="nav__link">EARPHONES</a></li>
+          <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__list"><a href="headphones.html" class="nav__link">HEADPHONES</a></li>
+          <li class="nav__list"><a href="speakers.html" class="nav__link">SPEAKERS</a></li>
+          <li class="nav__list"><a href="earphones.html" class="nav__link">EARPHONES</a></li>
         </ul>
       </nav>
-      <a href="#" class="header__korzinka"><img src="./images/korzinka.png" alt="rasm" class="header__korzinka-img"></a>
+      <a href="#" class="header__korzinka"><img src="./images/korzinka.png"
+          srcset="./images/korzinka.png 1x, ./images/korzinka@2x.png 2x" alt="rasm" class="header__korzinka-img"></a>
     </div>
   </header>
 
@@ -31,7 +33,7 @@
   <main class="main">
 
     <div class="container">
-      <a href="#" class="p-15 p-15--product-detail">go back</a>
+      <a href="headphones-2.html" class="p-15 p-15--product-detail">go back</a>
     </div>
     <!-- SECTION 1 -->
 
@@ -50,7 +52,69 @@
                 durable versatile wireless headset is a brilliant companion at home or on the move.
               </p>
               <p class="p-18 p-18--product-detail">$ 899</p>
-              <a href="#" class="btn btn--section1">See Product</a>
+
+              <form action="https://echo.htmlacademy.ru" class="card__form">
+                <label for="card_input" class="card__label">
+                  <input class="card__input" type="number" id="card_input">
+                  <span class="card__pilus"></span>
+                </label>
+                <a href="#cart-modal" class="btn btn--section1">See Product</a>
+
+                <div class="cart-modal" id="cart-modal">
+                  <div class="container">
+                    <div class="cart-modal__body">
+                      <div class="cart-modal__body-top">
+                        <p class="p-18 p-18--form">CART (3)</p>
+                        <p class="p-15 p-15--cart-modal">Remove all</p>
+                      </div>
+
+                      <ul class="form__ul">
+                        <li class="form__list form__list-cart-modal">
+                          <div class="form__list-text">
+                            <p class="p-15 p-15--form__list-text">XX99 MK II</p>
+                            <p class="p-14 p-14--form__list-text">$ 2,999</p>
+                          </div>
+                          <label for="card_input" class="card__label card__label-cart-modal">
+                            <input class="card__input" type="number" id="card_input">
+                            <span class="card__pilus"></span>
+                          </label>
+                        </li>
+
+                        <li class="form__list form__list-cart-modal">
+                          <div class="form__list-text">
+                            <p class="p-15 p-15--form__list-text">XX59</p>
+                            <p class="p-14 p-14--form__list-text">$ 899</p>
+                          </div>
+                          <label for="card_input" class="card__label card__label-cart-modal-2-3">
+                            <input class="card__input" type="number" id="card_input">
+                            <span class="card__pilus"></span>
+                          </label>
+                        </li>
+
+                        <li class="form__list form__list-cart-modal">
+                          <div class="form__list-text">
+                            <p class="p-15 p-15--form__list-text">YX1</p>
+                            <p class="p-14 p-14--form__list-text">$ 599</p>
+                          </div>
+                          <label for="card_input" class="card__label card__label-cart-modal-2-3">
+                            <input class="card__input" type="number" id="card_input">
+                            <span class="card__pilus"></span>
+                          </label>
+                        </li>
+                      </ul>
+
+                      <ul class="form__ul2">
+                        <li class="form__list2">
+                          <p class="p-15">TOTAL</p>
+                          <p class="p-18 p-18--cart-modal">$ 5,396</p>
+                        </li>
+                      </ul>
+
+                      <a href="checkout.html" class="btn btn--form__right">checkout</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </li>
         </ul>
@@ -131,10 +195,14 @@
     <section class="imgs">
       <div class="container">
         <div class="imgs__left">
-          <img src="./images/malika.png" alt="rasm" class="imgs__left-img">
-          <img src="./images/bts-birlashgan.png" alt="rasm" class="imgs__left-img">
+          <img src="./images/malika.png" srcset="./images/malika.png 1x, ./images/malika@2x.png 2x" alt="rasm"
+            class="imgs__left-img">
+          <img src="./images/bts-birlashgan.png"
+            srcset="./images/bts-birlashgan.png 1x, ./images/bts-birlashgan@2x.png 2x" alt="rasm"
+            class="imgs__left-img">
         </div>
-        <img src="./images/bts-malikada.png" alt="resm" class="imgs__right">
+        <img src="./images/bts-malikada.png" srcset="./images/bts-malikada.png 1x, ./images/bts-malikada@2x.png 2x"
+          alt="resm" class="imgs__right">
       </div>
     </section>
 
@@ -218,13 +286,14 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-        <a href="#" class="header__logo"><img src="./images/logo.png" alt="logo" class="header__logo-img"></a>
+        <a href="#" class="header__logo"><img src="./images/logo.png"
+            srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" alt="logo" class="header__logo-img"></a>
         <nav class="nav">
           <ul class="nav__ul">
-            <li class="nav__list"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__list"><a href="#" class="nav__link">HEADPHONES</a></li>
-            <li class="nav__list"><a href="#" class="nav__link">SPEAKERS</a></li>
-            <li class="nav__list"><a href="#" class="nav__link">EARPHONES</a></li>
+            <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__list"><a href="headphones.html" class="nav__link">HEADPHONES</a></li>
+            <li class="nav__list"><a href="speakers.html" class="nav__link">SPEAKERS</a></li>
+            <li class="nav__list"><a href="earphones.html" class="nav__link">EARPHONES</a></li>
           </ul>
         </nav>
       </div>
@@ -246,19 +315,22 @@
         <ul class="footer__bottom-right">
           <li class="footer__bottom-list">
             <a href="#" class="footer__bottom-link">
-              <img class="footer__bottom-img" src="./images/facebook.svg" alt="facebook">
+              <img class="footer__bottom-img" src="./images/facebook.svg"
+                srcset="./images/facebook.svg 1x, ./images/facebook@2x.svg 2x" alt="facebook">
             </a>
           </li>
 
           <li class="footer__bottom-list">
             <a href="#" class="footer__bottom-link">
-              <img class="footer__bottom-img" src="./images/twitter.svg" alt="twitter">
+              <img class="footer__bottom-img" src="./images/twitter.svg"
+                srcset="./images/twitter.svg 1x, ./images/twitter@2x.svg 2x" alt="twitter">
             </a>
           </li>
 
           <li class="footer__bottom-list">
             <a href="#" class="footer__bottom-link">
-              <img class="footer__bottom-img" src="./images/instagram.svg" alt="instagram">
+              <img class="footer__bottom-img" src="./images/instagram.svg"
+                srcset="./images/instagram.svg 1x, ./images/instagram@2x.svg 2x" alt="instagram">
             </a>
           </li>
         </ul>

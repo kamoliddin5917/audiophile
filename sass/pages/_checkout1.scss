@@ -99,6 +99,14 @@
       opacity: .5;
     }
 
+    &-cart-modal {
+      &::after {
+        visibility: hidden;
+      }
+    }
+
+
+
     &2 {
       @extend %jsb;
     }
