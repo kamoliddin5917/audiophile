@@ -3,6 +3,16 @@ body {
   color: $color-black;
 }
 
+html {
+  @include respond(tablet) {
+    font-size: 30%;
+  }
+
+  @include respond(phone) {
+    font-size: 10%;
+  }
+}
+
 // SECTION 1
 
 .section1 {

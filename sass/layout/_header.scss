@@ -2,6 +2,12 @@
   background-color: #0E0E0E;
   color: $color-white;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
   & .container {
     @extend %aligncenter;
     padding-top: 3.2rem;
@@ -22,5 +28,9 @@
     height: 2rem;
     margin-left: auto;
   }
+
 }
 
+.main {
+  margin-top: 9rem;
+}

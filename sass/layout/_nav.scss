@@ -19,5 +19,10 @@
     font-size: 1.3rem;
     line-height: 2.5rem;
     letter-spacing: .2rem;
+
+    &:hover {
+      color: $color-coral-dark;
+      transition: all .4s ease;
+    }
   }
 }

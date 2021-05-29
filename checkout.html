@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHeckout</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="header__logo"><img src="./images/logo.png" alt="logo" class="header__logo-img"></a>
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li class="nav__list"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__list"><a href="#" class="nav__link">HEADPHONES</a></li>
+          <li class="nav__list"><a href="#" class="nav__link">SPEAKERS</a></li>
+          <li class="nav__list"><a href="#" class="nav__link">EARPHONES</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="header__korzinka"><img src="./images/korzinka.png" alt="rasm" class="header__korzinka-img"></a>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+
+  <main class="main">
+
+    <div class="container">
+      <a href="#" class="p-15 p-15--product-detail">go back</a>
+    </div>
+
+    <form action="https://echo.htmlacademy.ru" class="form">
+      <div class="container">
+        <div class="form__left">
+          <h3 class="h3 h3--checkout">CHECKOUT</h3>
+
+          <p class="p-13">Billing Details</p>
+
+          <div class="form__box">
+            <label class="label label--309" for="name">
+              <input class="input input--name" id="name" type="text" name="name" placeholder="Alexei Ward" required>
+              <span class="label__span">
+                <span class="p-12 input__invalid">Wrong format</span>
+                <span class="p-12">Name</span>
+              </span>
+            </label>
+
+            <label class="label label--309" for="email">
+              <input class="input input--name" id="email" type="email" name="email" placeholder="alexei@mail.com"
+                required>
+              <span class="label__span">
+                <span class="p-12 input__invalid">Wrong format</span>
+                <span class="p-12">Email Address</span>
+              </span>
+            </label>
+
+            <label class="label label--309" for="tel">
+              <input class="input input--name" id="tel" type="tel" name="tel" placeholder="+1 202-555-0136" required>
+              <span class="label__span">
+                <span class="p-12 input__invalid">Wrong format</span>
+                <span class="p-12">Phone Number</span>
+              </span>
+            </label>
+          </div>
+
+          <p class="p-13">shipping info</p>
+
+          <div class="form__box">
+            <label class="label" for="address">
+              <input class="input input--name" id="address" type="text" name="address"
+                placeholder="1137 Williams Avenue" required>
+              <span class="label__span">
+                <span class="p-12 input__invalid">Wrong format</span>
+                <span class="p-12">Address</span>
+              </span>
+            </label>
+
+            <label class="label label--309" for="zip_code">
+              <input class="input input--name" id="zip_code" type="password" name="zip_code" placeholder="10001"
+                required>
+              <span class="label__span">
+                <span class="p-12 input__invalid">Wrong format</span>
+                <span class="p-12">ZIP Code</span>
+              </span>
+            </label>
+
+            <label class="label label--309" for="city">
+              <input class="input input--name" id="city" type="text" name="city" placeholder="New York" required>
+              <span class="label__span">
+                <span class="p-12 input__invalid">Wrong format</span>
+                <span class="p-12">City</span>
+              </span>
+            </label>
+
+            <label class="label label--309" for="country">
+              <input class="input input--name" id="country" type="text" name="country" placeholder="United States"
+                required>
+              <span class="label__span">
+                <span class="p-12 input__invalid">Wrong format</span>
+                <span class="p-12">Country</span>
+              </span>
+            </label>
+          </div>
+
+          <p class="p-13">payment details</p>
+
+          <div class="form__box form__box-payment">
+            <p class="p-12">Payment Method</p>
+
+            <div class="form__box-radio">
+              <input class="form__box-check" id="money" type="radio" name="payment">
+              <label class="label__radio" for="money">
+                <span class="dumaloq"></span>
+                <span class="p-14 p-14--radio">e-Money</span>
+              </label>
+
+              <input class="form__box-check" id="cash" type="radio" name="payment">
+              <label class="label__radio" for="cash">
+                <span class="dumaloq"></span>
+                <span class="p-14 p-14--radio">Cash on Delivery</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form__box">
+            <label class="label label--309" for="money_number">
+              <input class="input input--name" id="money_number" type="number" name="money_number"
+                placeholder="238521993" required>
+              <span class="label__span">
+                <span class="p-12 input__invalid">Wrong format</span>
+                <span class="p-12">e-Money Number</span>
+              </span>
+            </label>
+
+            <label class="label label--309" for="money_pin">
+              <input class="input input--name" id="money_pin" type="password" name="money_pin" placeholder="6891"
+                required>
+              <span class="label__span">
+                <span class="p-12 input__invalid">Wrong format</span>
+                <span class="p-12">e-Money PIN</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form__right">
+          <p class="p-18 p-18--form">SUMMARY</p>
+
+          <ul class="form__ul">
+            <li class="form__list">
+              <div class="form__list-text">
+                <p class="p-15 p-15--form__list-text">XX99 MK II</p>
+                <p class="p-14 p-14--form__list-text">$ 2,999</p>
+              </div>
+            </li>
+
+            <li class="form__list">
+              <div class="form__list-text">
+                <p class="p-15 p-15--form__list-text">XX59</p>
+                <p class="p-14 p-14--form__list-text">$ 899</p>
+              </div>
+            </li>
+
+            <li class="form__list">
+              <div class="form__list-text">
+                <p class="p-15 p-15--form__list-text">YX1</p>
+                <p class="p-14 p-14--form__list-text">$ 599</p>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="form__ul2">
+            <li class="form__list2">
+              <p class="p-15">TOTAL</p>
+              <p class="p-18">$ 5,396</p>
+            </li>
+
+            <li class="form__list2">
+              <p class="p-15">SHIPPING</p>
+              <p class="p-18">$ 50</p>
+            </li>
+
+            <li class="form__list2">
+              <p class="p-15">VAT (INCLUDED)</p>
+              <p class="p-18">$ 1,079</p>
+            </li>
+
+            <li class="form__list2">
+              <p class="p-15">GRAND TOTAL</p>
+              <p class="p-18">$ 5,446</p>
+            </li>
+          </ul>
+
+          <a href="#modal" class="btn btn--form__right">CONTINUE & PAY</a>
+        </div>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal__body">
+          <h3 class="h3 h3--modal">THANK YOU <br> FOR YOUR ORDER</h3>
+          <p class="p-15 p-15--modal">You will receive an email confirmation shortly.</p>
+
+          <div class="modal__carta">
+            <div class="modal__carta-left">
+              <ul class="form__ul form__ul-modal">
+                <li class="form__list form__list-modal">
+                  <div class="form__list-text">
+                    <p class="p-15 p-15--form__list-text">XX99 MK II</p>
+                    <p class="p-14 p-14--form__list-text">$ 2,999</p>
+                  </div>
+                </li>
+
+                <li class="form__list form__list-modal">
+                  <div class="form__list-text">
+                    <p class="p-15 p-15--form__list-text">XX59</p>
+                    <p class="p-14 p-14--form__list-text">$ 899</p>
+                  </div>
+                </li>
+
+                <li class="form__list form__list-modal">
+                  <div class="form__list-text">
+                    <p class="p-15 p-15--form__list-text">YX1</p>
+                    <p class="p-14 p-14--form__list-text">$ 599</p>
+                  </div>
+                </li>
+              </ul>
+
+              <p class="p-12 p-12--modal-carta">View less</p>
+            </div>
+
+            <div class="modal__carta-right">
+              <p class="p-15">GRAND TOTAL</p>
+              <p class="p-18 p-18--modal-carta">$ 5,446</p>
+            </div>
+          </div>
+
+          <button class="btn btn--form__right" type="submit">BACK TO HOME</button>
+        </div>
+      </div>
+    </form>
+
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#" class="header__logo"><img src="./images/logo.png" alt="logo" class="header__logo-img"></a>
+        <nav class="nav">
+          <ul class="nav__ul">
+            <li class="nav__list"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__list"><a href="#" class="nav__link">HEADPHONES</a></li>
+            <li class="nav__list"><a href="#" class="nav__link">SPEAKERS</a></li>
+            <li class="nav__list"><a href="#" class="nav__link">EARPHONES</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-left">
+          <p class="p-15 p-15--footer-top">
+            Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound
+            specialists
+            who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re
+            open 7 days
+            a week.
+          </p>
+          <p class="p-15 p-15--footer-bottom">
+            Copyright 2021. All Rights Reserved
+          </p>
+        </div>
+
+        <ul class="footer__bottom-right">
+          <li class="footer__bottom-list">
+            <a href="#" class="footer__bottom-link">
+              <img class="footer__bottom-img" src="./images/facebook.svg" alt="facebook">
+            </a>
+          </li>
+
+          <li class="footer__bottom-list">
+            <a href="#" class="footer__bottom-link">
+              <img class="footer__bottom-img" src="./images/twitter.svg" alt="twitter">
+            </a>
+          </li>
+
+          <li class="footer__bottom-list">
+            <a href="#" class="footer__bottom-link">
+              <img class="footer__bottom-img" src="./images/instagram.svg" alt="instagram">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>

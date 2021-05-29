@@ -20,6 +20,11 @@
       background-position: center calc(100% - 11.4rem);
     }
 
+    &:hover .box__span-2 {
+      color: $color-coral-dark;
+      transition: all .4s ease;
+    }
+
     &::before {
       content: "";
       display: inline-block;
@@ -109,5 +114,7 @@
       @include badimg(.8rem, 1.2rem, '../images/arrow.png');
       margin-left: .9rem;
     }
+
+
   }
 }

@@ -10,13 +10,35 @@
   padding: 1.5rem 3rem;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: $color-coral-hungry;
+    transition: all .4s ease;
+  }
+
   &--section3 {
     background-color: $color-black;
+
+    &:hover {
+      background-color: #4C4C4C;
+    }
   }
 
   &--section4 {
     background-color: inherit;
     color: inherit;
     border: .1rem solid $color-black;
+
+    &:hover {
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+
+  &--form__right {
+    width: 100%;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
   }
 }
