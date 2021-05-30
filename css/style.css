@@ -830,6 +830,13 @@ template {
       list-style: none; }
     .footer__bottom-list:not(:first-child) {
       margin-left: 1.6rem; }
+    .footer__bottom-link {
+      display: inline-block; }
+  .footer__facebook, .footer__twitter, .footer__instagram {
+    color: #fff;
+    transition: all .3s ease; }
+  .footer__facebook:hover, .footer__twitter:hover, .footer__instagram:hover {
+    color: #d87d4a; }
 
 .imgs {
   margin-bottom: 16rem; }

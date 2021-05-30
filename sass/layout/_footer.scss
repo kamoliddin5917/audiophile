@@ -25,5 +25,22 @@
     &-list:not(:first-child) {
       margin-left: 1.6rem;
     }
+
+    &-link {
+      display: inline-block;
+    }
+  }
+
+  &__facebook,
+  &__twitter,
+  &__instagram {
+    color: $color-white;
+    transition: all .3s ease;
+  }
+
+  &__facebook:hover,
+  &__twitter:hover,
+  &__instagram:hover {
+    color: $color-coral-dark;
   }
 }
