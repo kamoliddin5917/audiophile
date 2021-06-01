@@ -1,6 +1,10 @@
 .imgs {
   margin-bottom: 16rem;
 
+  @include respond(tablet) {
+    margin-bottom: 12rem;
+  }
+
   & .container {
     @extend %jsb;
   }
@@ -8,13 +12,22 @@
   &__left {
     width: 44.5rem;
 
+    @include respond(tablet) {
+      width: 27.7rem;
+    }
+
     &-img:not(:first-child) {
       margin-top: 3.2rem;
+
+      @include respond(tablet) {
+        margin-top: 2rem;
+      }
     }
 
     &-img {
       border-radius: .8rem;
       display: inline-block;
+      width: 100%;
     }
   }
 
@@ -22,5 +35,9 @@
     display: inline-block;
     width: 63.5rem;
     border-radius: .8rem;
+
+    @include respond(tablet) {
+      width: 39.5rem;
+    }
   }
 }

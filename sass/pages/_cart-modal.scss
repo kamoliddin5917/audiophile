@@ -11,6 +11,10 @@
   opacity: 0;
   visibility: hidden;
 
+  @include respond(tablet) {
+    margin-top: 9rem;
+  }
+
   &:target {
     opacity: 1;
     visibility: visible;

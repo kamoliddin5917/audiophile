@@ -2,22 +2,46 @@
   margin-top: 12rem;
   margin-bottom: 16rem;
 
+  @include respond(tablet) {
+    margin-bottom: 12rem;
+  }
+
   & .container {
     display: flex;
     justify-content: space-between;
+
+    @include respond(tablet) {
+      flex-direction: column;
+    }
   }
 
   &__left {
     width: 63.5rem;
+
+    @include respond(tablet) {
+      width: 100%;
+      margin-bottom: 12rem;
+    }
   }
 
   &__right {
     width: 35rem;
+
+    @include respond(tablet) {
+      width: 54.9rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
   }
 
   &__ul {
     margin-top: 3.2rem;
     list-style: none;
+
+    @include respond(tablet) {
+      margin-top: 0;
+    }
   }
 
   &__list:not(:last-child) {
@@ -52,10 +76,18 @@
       margin-top: 6.4rem;
       @extend %jsb;
 
+      @include respond(tablet) {
+        margin-top: 5.6rem;
+        margin-bottom: 17.2rem;
+      }
     }
 
     &__list {
       width: 35rem;
+
+      @include respond(tablet) {
+        width: 22.3rem;
+      }
 
       &::before {
         @include badimg(100%, 31.8rem, '../images/bts-black-1.png', 14.8rem 19.3rem) {

@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include respond(tablet) {
+      flex-direction: column;
+    }
   }
 
   &__left {
@@ -13,6 +17,12 @@
     border-radius: .8rem;
     width: 73rem;
     border: 1px solid transparent;
+
+    @include respond(tablet) {
+      margin-bottom: 3.2rem;
+      width: 100%;
+      padding: 3rem 2.7rem;
+    }
   }
 
 
@@ -53,6 +63,10 @@
     border: 1px solid transparent;
     padding: 3.2rem 3.3rem;
 
+    @include respond(tablet) {
+      width: 100%;
+      margin-bottom: 11.6rem;
+    }
   }
 
   &__ul {

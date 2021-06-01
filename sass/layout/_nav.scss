@@ -1,6 +1,11 @@
 .nav {
   margin-left: 19.7rem;
 
+  @include respond(tablet) {
+    margin-left: 0;
+    margin-top: 3.2rem;
+  }
+
   &__ul {
     @extend %aligncenter;
     list-style: none;
@@ -23,6 +28,12 @@
     &:hover {
       color: $color-coral-dark;
       transition: all .4s ease;
+    }
+  }
+
+  &--header {
+    @include respond(tablet) {
+      display: none;
     }
   }
 }

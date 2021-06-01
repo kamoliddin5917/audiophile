@@ -1,0 +1,86 @@
+.gamburger {
+  display: none;
+  width: 1.6rem;
+  height: 0.3rem;
+  background-color: $color-white;
+
+  position: relative;
+
+  @include respond(tablet) {
+    display: block;
+  }
+
+  &::before,
+  &::after {
+    @include ba(1.6rem, .3rem) {
+      background-color: $color-white;
+    }
+
+    transition: all .2s ease-in-out;
+
+    position: absolute;
+  }
+
+  &::before {
+    top: .6rem;
+  }
+
+  &::after {
+    bottom: .6rem;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input:checked+.gamburger__label .gamburger {
+    visibility: hidden;
+  }
+
+  &__input:checked+.gamburger__label .gamburger::after {
+    bottom: 0;
+    visibility: visible;
+    transform: rotate(135deg);
+  }
+
+  &__input:checked+.gamburger__label .gamburger::before {
+    top: 0;
+    visibility: visible;
+    transform: rotate(-135deg);
+  }
+
+
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin-top: 9rem;
+    background-color: rgba(0, 0, 0, .4);
+
+    // opacity: 0;
+    visibility: hidden;
+
+    z-index: 100;
+
+    &-body {
+      width: 100%;
+      background-color: $color-white;
+      padding-top: 10.8rem;
+      padding-bottom: 6.7rem;
+      border-bottom-left-radius: .8rem;
+      border-bottom-right-radius: .8rem;
+    }
+  }
+
+  &__input:checked~.gamburger__modal {
+    visibility: visible;
+    // opacity: 1;
+  }
+}

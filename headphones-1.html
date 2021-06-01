@@ -13,9 +13,15 @@
   <!-- HEADER -->
   <header class="header">
     <div class="container">
+      <input class="gamburger__input" type="checkbox" id="gamburger">
+      <label class="gamburger__label" for="gamburger">
+        <span class="gamburger"></span>
+      </label>
+
+
       <a href="#" class="header__logo"><img src="./images/logo.png"
           srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" alt="logo" class="header__logo-img"></a>
-      <nav class="nav">
+      <nav class="nav nav--header">
         <ul class="nav__ul">
           <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
           <li class="nav__list"><a href="headphones.html" class="nav__link">HEADPHONES</a></li>
@@ -25,6 +31,35 @@
       </nav>
       <a href="#" class="header__korzinka"><img src="./images/korzinka.png"
           srcset="./images/korzinka.png 1x, ./images/korzinka@2x.png 2x" alt="rasm" class="header__korzinka-img"></a>
+
+      <div class="gamburger__modal">
+        <div class="gamburger__modal-body">
+          <div class="container">
+            <ul class="box">
+              <li class="box__list">
+                <a href="#" class="box__link box__link-1">
+                  <span class="box__span-1">HEADPHONES</span>
+                  <span class="box__span-2">Shop</span>
+                </a>
+              </li>
+
+              <li class="box__list">
+                <a href="#" class="box__link box__link-2">
+                  <span class="box__span-1">SPEAKERS</span>
+                  <span class="box__span-2">Shop</span>
+                </a>
+              </li>
+
+              <li class="box__list">
+                <a href="#" class="box__link box__link-3">
+                  <span class="box__span-1">EARPHONES</span>
+                  <span class="box__span-2">Shop</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -40,7 +75,7 @@
     <section class="headphones-1-section1">
       <div class="container">
         <ul class="card">
-          <li class="card__list card__list-1">
+          <li class="card__list card__list-1 card__list-tablet">
             <div class="card__text">
               <p class="p-14 p-14--card">
                 NEW PRODUCT
@@ -287,7 +322,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-        <a href="#" class="header__logo"><img src="./images/logo.png"
+        <a href="#" class="header__logo header__logo-footer"><img src="./images/logo.png"
             srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" alt="logo" class="header__logo-img"></a>
         <nav class="nav">
           <ul class="nav__ul">
