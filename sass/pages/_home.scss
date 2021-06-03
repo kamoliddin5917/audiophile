@@ -7,6 +7,10 @@ body {
   @include respond(tablet) {
     max-width: 71.9rem;
   }
+
+  @include respond(phone) {
+    max-width: 36rem;
+  }
 }
 
 // html {
@@ -140,6 +144,10 @@ body {
 .section4 {
   margin-top: 4.8rem;
 
+  @include respond(phone) {
+    margin-top: 2.4rem;
+  }
+
   &__box {
     background-image: url(../images/bg-kalonka.png);
     background-repeat: no-repeat;
@@ -165,6 +173,16 @@ body {
     @include respond(tablet) {
       margin-left: 4.1rem;
     }
+
+    @include respond(phone) {
+      margin-left: 2.4rem;
+    }
+
+    &-section5 {
+      @include respond(phone) {
+        margin: 4.1rem 0 4.1rem 2.4rem;
+      }
+    }
   }
 
   &__p-28 {
@@ -181,6 +199,10 @@ body {
 .section5 {
   margin-top: 4.8rem;
 
+  @include respond(phone) {
+    margin-top: 2.4rem;
+  }
+
   & .container {
     &::before {
       @include badimg(54rem, 32rem, '../images/bg-airphone.png');
@@ -195,9 +217,20 @@ body {
         height: 32.4rem;
         background-size: 33.9rem 32.4rem;
       }
+
+      @include respond(phone) {
+        width: 100%;
+        height: 20rem;
+        background-size: 100% 20rem;
+        margin-bottom: 2.4rem;
+      }
     }
 
     @extend %jsb;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__box {
@@ -208,6 +241,10 @@ body {
 
     @include respond(tablet) {
       width: 33.9rem;
+    }
+
+    @include respond(phone) {
+      width: 100%;
     }
   }
 }
@@ -221,11 +258,19 @@ body {
     margin: 9.6rem 0;
   }
 
+  @include respond(phone) {
+    margin: 12rem 0;
+  }
+
   &--category {
     margin: 16rem 0;
 
     @include respond(tablet) {
       margin: 12rem 0;
+    }
+
+    @include respond(phone) {
+      margin-top: calc(12rem - 7rem);
     }
   }
 
@@ -239,6 +284,12 @@ body {
       }
 
       border-radius: .8rem;
+
+      @include respond(phone) {
+        width: 100%;
+        height: 30rem;
+        background-size: 100% 30rem;
+      }
     }
 
     @extend %jsb;
@@ -246,6 +297,7 @@ body {
     @include respond(tablet) {
       flex-direction: column-reverse;
     }
+
   }
 
   &__box {
@@ -255,6 +307,11 @@ body {
       width: 57.6rem;
       text-align: center;
       margin-top: 6.3rem;
+    }
+
+    @include respond(phone) {
+      margin-top: 4rem;
+      width: 100%;
     }
   }
 }

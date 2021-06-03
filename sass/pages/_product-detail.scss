@@ -6,6 +6,10 @@
     margin-bottom: 12rem;
   }
 
+  @include respond(phone) {
+    margin: 8.8rem 0;
+  }
+
   & .container {
     display: flex;
     justify-content: space-between;
@@ -22,6 +26,10 @@
       width: 100%;
       margin-bottom: 12rem;
     }
+
+    @include respond(phone) {
+      margin-bottom: 8.8rem;
+    }
   }
 
   &__right {
@@ -33,6 +41,11 @@
       justify-content: space-between;
       align-items: flex-start;
     }
+
+    @include respond(phone) {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   &__ul {
@@ -41,6 +54,10 @@
 
     @include respond(tablet) {
       margin-top: 0;
+    }
+
+    @include respond(phone) {
+      margin-top: 2.4rem;
     }
   }
 
@@ -80,6 +97,11 @@
         margin-top: 5.6rem;
         margin-bottom: 17.2rem;
       }
+
+      @include respond(phone) {
+        margin-top: 4rem;
+        flex-direction: column;
+      }
     }
 
     &__list {
@@ -87,6 +109,10 @@
 
       @include respond(tablet) {
         width: 22.3rem;
+      }
+
+      @include respond(phone) {
+        width: 100%;
       }
 
       &::before {
@@ -102,6 +128,19 @@
         }
 
         margin-bottom: 4rem;
+
+        @include respond(phone) {
+          height: 12rem;
+          margin-bottom: 3.2rem;
+          background-size: 7.3rem 9.5rem;
+          background-position: center;
+        }
+      }
+
+      &:not(:first-child) {
+        @include respond(phone) {
+          margin-top: 5.6rem;
+        }
       }
 
       &-2 {
@@ -114,9 +153,12 @@
           (min-width:2000px) {
             background-image: url(../images/bts-big-white@2x.png);
           }
+
+          @include respond(phone) {
+            background-size: 8rem 8.3rem;
+            background-position: center;
+          }
         }
-
-
       }
 
       &-3 {
@@ -128,6 +170,11 @@
           @media only screen and(min-resolution:192dpi)and(min-width:376px),
           (min-width:2000px) {
             background-image: url(../images/kalonka@2x.png);
+          }
+
+          @include respond(phone) {
+            background-size: 7.1rem 8.6rem;
+            background-position: center;
           }
         }
       }
@@ -143,6 +190,11 @@
           (min-width:2000px) {
             background-image: url(../images/bts-big-black@2x.png);
           }
+
+          @include respond(phone) {
+            background-size: 8.6rem 9.6rem;
+            background-position: center;
+          }
         }
       }
 
@@ -155,6 +207,11 @@
           @media only screen and(min-resolution:192dpi)and(min-width:376px),
           (min-width:2000px) {
             background-image: url(../images/kalonka2@2x.png);
+          }
+
+          @include respond(phone) {
+            background-size: 6rem 8.7rem;
+            background-position: center;
           }
         }
       }

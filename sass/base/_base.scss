@@ -42,6 +42,10 @@
   &--card {
     margin-bottom: 1.6rem;
     color: $color-coral-dark;
+
+    @include respond(phone) {
+      margin-bottom: 2.4rem;
+    }
   }
 
   &--radio {
@@ -81,6 +85,10 @@
     @include respond(tablet) {
       margin-bottom: 8rem;
     }
+
+    @include respond(phone) {
+      margin-bottom: 4.8rem;
+    }
   }
 
   &--card {
@@ -102,6 +110,10 @@
     @include respond(tablet) {
       margin-top: 3.3rem;
       margin-bottom: 2.4rem;
+    }
+
+    @include respond(phone) {
+      margin-top: 1.6rem;
     }
 
     &:hover {
@@ -175,6 +187,11 @@
   letter-spacing: 1.42857px;
   text-transform: uppercase;
 
+  @include respond(phone) {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+
   &__span {
     color: $color-coral-dark;
   }
@@ -190,6 +207,11 @@
       width: 44.5rem;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      margin-bottom: 2.4rem;
     }
   }
 

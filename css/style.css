@@ -408,6 +408,9 @@ body {
   .p-14--card {
     margin-bottom: 1.6rem;
     color: #d87d4a; }
+    @media only screen and (max-width: 37.5em) {
+      .p-14--card {
+        margin-bottom: 2.4rem; } }
   .p-14--radio {
     font-weight: bold;
     letter-spacing: -0.25px; }
@@ -436,6 +439,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .p-15--footer-top {
         margin-bottom: 8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .p-15--footer-top {
+        margin-bottom: 4.8rem; } }
   .p-15--card {
     margin-bottom: 4rem; }
     @media only screen and (max-width: 56.25em) {
@@ -452,6 +458,9 @@ body {
       .p-15--product-detail {
         margin-top: 3.3rem;
         margin-bottom: 2.4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .p-15--product-detail {
+        margin-top: 1.6rem; } }
     .p-15--product-detail:hover {
       color: #d87d4a; }
   .p-15--product-detail-top {
@@ -501,6 +510,10 @@ body {
   line-height: 4.4rem;
   letter-spacing: 1.42857px;
   text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .h2 {
+      font-size: 2.8rem;
+      line-height: 3.8rem; } }
   .h2__span {
     color: #d87d4a; }
   .h2--section6 {
@@ -512,6 +525,10 @@ body {
         width: 44.5rem;
         margin-left: auto;
         margin-right: auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .h2--card {
+        width: 100%;
+        margin-bottom: 2.4rem; } }
   .h2--category {
     color: #fff;
     text-align: center; }
@@ -586,6 +603,9 @@ body {
       .card__text {
         width: 57.2rem;
         text-align: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__text {
+        width: 100%; } }
   .card__list:not(:last-child) {
     margin-bottom: 16rem; }
     @media only screen and (max-width: 56.25em) {
@@ -615,6 +635,9 @@ body {
         background-size: 22rem 24.3rem, 16.5rem 3.5rem;
         background-position: center calc(100% - 6.8rem), center calc(100% - 5.1rem);
         margin-bottom: 10.3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__list::before {
+        margin-bottom: 3.2rem; } }
   .card__list-1-s::before {
     background-image: url(../images/kalonka.png), url(../images/soya.png);
     background-size: 29.1rem 35rem, 26.2rem 5.6rem;
@@ -629,6 +652,9 @@ body {
         background-size: 20rem 23.3rem, 16.5rem 3.5rem;
         background-position: center calc(100% - 6.8rem), center calc(100% - 5.1rem);
         margin-bottom: 10.3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__list-1-s::before {
+        margin-bottom: 3.2rem; } }
   .card__list-1-e::before {
     background-image: url(../images/airphone.png), url(../images/soya.png);
     background-size: 36rem 36rem, 26.2rem 5.6rem;
@@ -643,6 +669,9 @@ body {
         background-size: 24rem 24rem, 16.5rem 3.5rem;
         background-position: center calc(100% - 6.8rem), center calc(100% - 5.1rem);
         margin-bottom: 10.3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__list-1-e::before {
+        margin-bottom: 3.2rem; } }
   .card__list-2 {
     flex-direction: row-reverse; }
     @media only screen and (max-width: 56.25em) {
@@ -662,6 +691,9 @@ body {
           background-size: 17.2rem 22.5rem, 16.5rem 3.5rem;
           background-position: center calc(100% - 8.6rem), center calc(100% - 5.1rem);
           margin-bottom: 10.3rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .card__list-2::before {
+          margin-bottom: 3.2rem; } }
     .card__list-2-s::before {
       background-image: url(../images/kalonka2.png), url(../images/soya.png);
       background-size: 26.8rem 38.5rem, 26.2rem 5.6rem;
@@ -676,6 +708,9 @@ body {
           background-size: 16.9rem 24.3rem, 16.5rem 3.5rem;
           background-position: center calc(100% - 6.8rem), center calc(100% - 5.1rem);
           margin-bottom: 10.3rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .card__list-2-s::before {
+          margin-bottom: 3.2rem; } }
   .card__list-3::before {
     background-image: url(../images/bts-big-white.png), url(../images/soya.png);
     background-size: 37.3rem 38.9rem, 26.2rem 5.6rem;
@@ -690,6 +725,9 @@ body {
         background-size: 21.5rem 22.5rem, 16.5rem 3.5rem;
         background-position: center calc(100% - 8.6rem), center calc(100% - 5.1rem);
         margin-bottom: 10.3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__list-3::before {
+        margin-bottom: 3.2rem; } }
   .card__list-h1::before {
     background-image: url(../images/bts-black-1.png), url(../images/soya.png);
     background-size: 29.6rem 38.5rem, 26.2rem 5.6rem;
@@ -707,10 +745,16 @@ body {
   @media only screen and (max-width: 56.25em) {
     .card__list-tablet {
       flex-direction: row; } }
+  @media only screen and (max-width: 37.5em) {
+    .card__list-tablet {
+      flex-direction: column; } }
   @media only screen and (max-width: 56.25em) {
     .card__list-tablet .card__text {
       width: 33.9rem;
       text-align: start; } }
+  @media only screen and (max-width: 37.5em) {
+    .card__list-tablet .card__text {
+      width: 100%; } }
   .card__list-tablet .card__text .p-15 {
     margin-bottom: 3.2rem; }
   .card__list-tablet .card__text .p-18 {
@@ -723,6 +767,13 @@ body {
       margin-bottom: 0;
       background-size: 18.1rem 20.1rem, 13.6rem 2.9rem;
       background-position: center calc(100% - 14.6rem), center calc(100% - 13.2rem); } }
+  @media only screen and (max-width: 37.5em) {
+    .card__list-tablet::before {
+      width: 100%;
+      height: 32.7rem;
+      background-size: 18.1rem 20.1rem, 13.6rem 2.9rem;
+      background-position: center calc(100% - 7rem), center calc(100% - 5.6rem);
+      margin-bottom: 3.2rem; } }
   .card__form {
     display: flex; }
   .card__input {
@@ -921,14 +972,24 @@ body {
     @media only screen and (max-width: 56.25em) {
       .header__logo {
         margin-left: 4.2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo {
+        margin-left: auto;
+        margin-right: auto; } }
     @media only screen and (max-width: 56.25em) {
       .header__logo-footer {
         margin-left: 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo-footer {
+        margin-left: auto; } }
   .header__korzinka {
     display: inline-block;
     width: 2.3rem;
     height: 2rem;
     margin-left: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .header__korzinka {
+        margin-left: 0; } }
 
 .main {
   margin-top: 9rem; }
@@ -939,10 +1000,22 @@ body {
     .nav {
       margin-left: 0;
       margin-top: 3.2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .nav {
+      margin-top: 4.8rem;
+      margin-left: auto;
+      margin-right: auto; } }
   .nav__ul {
     list-style: none; }
+    @media only screen and (max-width: 37.5em) {
+      .nav__ul {
+        flex-direction: column; } }
   .nav__list:not(:first-child) {
     margin-left: 3.4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .nav__list:not(:first-child) {
+        margin-top: 1.6rem;
+        margin-left: 0; } }
   .nav__link {
     display: inline-block;
     text-decoration: none;
@@ -965,6 +1038,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding: 6rem 0 4.6rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding: 5.2rem 0 3.8rem 0; } }
   .footer__top {
     display: flex;
     align-items: center;
@@ -981,11 +1057,18 @@ body {
         flex-direction: column;
         align-items: flex-start;
         position: relative; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__bottom {
+        margin-top: 4.8rem;
+        text-align: center; } }
     .footer__bottom-left {
       width: 54rem; }
       @media only screen and (max-width: 56.25em) {
         .footer__bottom-left {
           width: 100%; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer__bottom-left {
+          margin-bottom: 4.8rem; } }
     .footer__bottom-right {
       list-style: none; }
       @media only screen and (max-width: 56.25em) {
@@ -993,6 +1076,10 @@ body {
           position: absolute;
           bottom: 0;
           right: 0; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer__bottom-right {
+          position: relative;
+          margin: 0 auto; } }
     .footer__bottom-list:not(:first-child) {
       margin-left: 1.6rem; }
     .footer__bottom-link {
@@ -1008,11 +1095,18 @@ body {
   @media only screen and (max-width: 56.25em) {
     .imgs {
       margin-bottom: 12rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .imgs .container {
+      flex-direction: column; } }
   .imgs__left {
     width: 44.5rem; }
     @media only screen and (max-width: 56.25em) {
       .imgs__left {
         width: 27.7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .imgs__left {
+        width: 100%;
+        margin-bottom: 2rem; } }
     .imgs__left-img:not(:first-child) {
       margin-top: 3.2rem; }
       @media only screen and (max-width: 56.25em) {
@@ -1022,6 +1116,9 @@ body {
       border-radius: .8rem;
       display: inline-block;
       width: 100%; }
+      @media only screen and (max-width: 37.5em) {
+        .imgs__left-img {
+          height: 17.4rem; } }
   .imgs__right {
     display: inline-block;
     width: 63.5rem;
@@ -1029,6 +1126,12 @@ body {
     @media only screen and (max-width: 56.25em) {
       .imgs__right {
         width: 39.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .imgs__right {
+        width: 100%; } }
+    @media only screen and (max-width: 37.5em) {
+      .imgs__right-img {
+        height: 36.8rem; } }
 
 .gamburger {
   display: none;
@@ -1092,6 +1195,10 @@ body {
 @media only screen and (max-width: 56.25em) {
   .container {
     max-width: 71.9rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .container {
+    max-width: 36rem; } }
 
 .section1 {
   background-color: #0E0E0E; }
@@ -1177,6 +1284,9 @@ body {
 
 .section4 {
   margin-top: 4.8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section4 {
+      margin-top: 2.4rem; } }
   .section4__box {
     background-image: url(../images/bg-kalonka.png);
     background-repeat: no-repeat;
@@ -1196,6 +1306,12 @@ body {
     @media only screen and (max-width: 56.25em) {
       .section4__text {
         margin-left: 4.1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .section4__text {
+        margin-left: 2.4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .section4__text-section5 {
+        margin: 4.1rem 0 4.1rem 2.4rem; } }
   .section4__p-28 {
     font-weight: bold;
     font-size: 2.8rem;
@@ -1205,6 +1321,9 @@ body {
 
 .section5 {
   margin-top: 4.8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section5 {
+      margin-top: 2.4rem; } }
   .section5 .container::before {
     content: "";
     display: inline-block;
@@ -1221,6 +1340,15 @@ body {
         width: 33.9rem;
         height: 32.4rem;
         background-size: 33.9rem 32.4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .section5 .container::before {
+        width: 100%;
+        height: 20rem;
+        background-size: 100% 20rem;
+        margin-bottom: 2.4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section5 .container {
+      flex-direction: column; } }
   .section5__box {
     background-color: #f1f1f1;
     border: .1rem solid transparent;
@@ -1229,17 +1357,26 @@ body {
     @media only screen and (max-width: 56.25em) {
       .section5__box {
         width: 33.9rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .section5__box {
+        width: 100%; } }
 
 .section6 {
   margin: 20rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section6 {
       margin: 9.6rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section6 {
+      margin: 12rem 0; } }
   .section6--category {
     margin: 16rem 0; }
     @media only screen and (max-width: 56.25em) {
       .section6--category {
         margin: 12rem 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .section6--category {
+        margin-top: calc(12rem - 7rem); } }
   .section6 .container::after {
     content: "";
     display: inline-block;
@@ -1252,6 +1389,11 @@ body {
     @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
       .section6 .container::after {
         background-image: url(../images/jek@2x.png); } }
+    @media only screen and (max-width: 37.5em) {
+      .section6 .container::after {
+        width: 100%;
+        height: 30rem;
+        background-size: 100% 30rem; } }
   @media only screen and (max-width: 56.25em) {
     .section6 .container {
       flex-direction: column-reverse; } }
@@ -1262,6 +1404,10 @@ body {
         width: 57.6rem;
         text-align: center;
         margin-top: 6.3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .section6__box {
+        margin-top: 4rem;
+        width: 100%; } }
 
 .category-header {
   background-color: #000; }
@@ -1273,6 +1419,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .category-header .container {
         padding-top: 10.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .category-header .container {
+        padding: 3.2rem 0; } }
 
 .headphones-section1 {
   margin-top: 16rem;
@@ -1281,6 +1430,9 @@ body {
     .headphones-section1 {
       margin-top: 12rem;
       margin-bottom: 17.2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .headphones-section1 {
+      margin-top: 6.4rem; } }
 
 .product-detail {
   margin-top: 12rem;
@@ -1288,6 +1440,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .product-detail {
       margin-bottom: 12rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .product-detail {
+      margin: 8.8rem 0; } }
   .product-detail .container {
     display: flex;
     justify-content: space-between; }
@@ -1300,6 +1455,9 @@ body {
       .product-detail__left {
         width: 100%;
         margin-bottom: 12rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .product-detail__left {
+        margin-bottom: 8.8rem; } }
   .product-detail__right {
     width: 35rem; }
     @media only screen and (max-width: 56.25em) {
@@ -1308,12 +1466,19 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: flex-start; } }
+    @media only screen and (max-width: 37.5em) {
+      .product-detail__right {
+        width: 100%;
+        flex-direction: column; } }
   .product-detail__ul {
     margin-top: 3.2rem;
     list-style: none; }
     @media only screen and (max-width: 56.25em) {
       .product-detail__ul {
         margin-top: 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .product-detail__ul {
+        margin-top: 2.4rem; } }
   .product-detail__list:not(:last-child) {
     margin-bottom: 0.8rem; }
   .product-detail__link {
@@ -1339,11 +1504,18 @@ body {
         .product-detail-s4__ul {
           margin-top: 5.6rem;
           margin-bottom: 17.2rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .product-detail-s4__ul {
+          margin-top: 4rem;
+          flex-direction: column; } }
     .product-detail-s4__list {
       width: 35rem; }
       @media only screen and (max-width: 56.25em) {
         .product-detail-s4__list {
           width: 22.3rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .product-detail-s4__list {
+          width: 100%; } }
       .product-detail-s4__list::before {
         content: "";
         display: inline-block;
@@ -1359,6 +1531,15 @@ body {
         @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
           .product-detail-s4__list::before {
             background-image: url(../images/bts-black-1@2x.png); } }
+        @media only screen and (max-width: 37.5em) {
+          .product-detail-s4__list::before {
+            height: 12rem;
+            margin-bottom: 3.2rem;
+            background-size: 7.3rem 9.5rem;
+            background-position: center; } }
+      @media only screen and (max-width: 37.5em) {
+        .product-detail-s4__list:not(:first-child) {
+          margin-top: 5.6rem; } }
       .product-detail-s4__list-2::before {
         background-image: url(../images/bts-big-white.png);
         background-size: 19rem 19.9rem;
@@ -1366,6 +1547,10 @@ body {
         @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
           .product-detail-s4__list-2::before {
             background-image: url(../images/bts-big-white@2x.png); } }
+        @media only screen and (max-width: 37.5em) {
+          .product-detail-s4__list-2::before {
+            background-size: 8rem 8.3rem;
+            background-position: center; } }
       .product-detail-s4__list-3::before {
         background-image: url(../images/kalonka.png);
         background-size: 14.3rem 17.2rem;
@@ -1373,6 +1558,10 @@ body {
         @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
           .product-detail-s4__list-3::before {
             background-image: url(../images/kalonka@2x.png); } }
+        @media only screen and (max-width: 37.5em) {
+          .product-detail-s4__list-3::before {
+            background-size: 7.1rem 8.6rem;
+            background-position: center; } }
       .product-detail-s4__list-h2::before {
         background-image: url(../images/bts-big-black.png);
         background-size: 17.5rem 19.4rem;
@@ -1380,6 +1569,10 @@ body {
         @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
           .product-detail-s4__list-h2::before {
             background-image: url(../images/bts-big-black@2x.png); } }
+        @media only screen and (max-width: 37.5em) {
+          .product-detail-s4__list-h2::before {
+            background-size: 8.6rem 9.6rem;
+            background-position: center; } }
       .product-detail-s4__list-s1::before {
         background-image: url(../images/kalonka2.png);
         background-size: 13.3rem 19.1rem;
@@ -1387,6 +1580,10 @@ body {
         @media only screen and (min-resolution: 192dpi) and (min-width: 376px), (min-width: 2000px) {
           .product-detail-s4__list-s1::before {
             background-image: url(../images/kalonka2@2x.png); } }
+        @media only screen and (max-width: 37.5em) {
+          .product-detail-s4__list-s1::before {
+            background-size: 6rem 8.7rem;
+            background-position: center; } }
 
 .cart-modal {
   position: fixed;

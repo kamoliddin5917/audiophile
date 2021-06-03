@@ -29,9 +29,18 @@
       margin-left: 4.2rem;
     }
 
+    @include respond(phone) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     &-footer {
       @include respond(tablet) {
         margin-left: 0;
+      }
+
+      @include respond(phone) {
+        margin-left: auto;
       }
     }
   }
@@ -41,6 +50,10 @@
     width: 2.3rem;
     height: 2rem;
     margin-left: auto;
+
+    @include respond(phone) {
+      margin-left: 0;
+    }
   }
 
 }

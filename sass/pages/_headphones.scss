@@ -12,6 +12,10 @@
     @include respond(tablet) {
       padding-top: 10.5rem;
     }
+
+    @include respond(phone) {
+      padding: 3.2rem 0;
+    }
   }
 }
 
@@ -22,5 +26,9 @@
   @include respond(tablet) {
     margin-top: 12rem;
     margin-bottom: 17.2rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 6.4rem;
   }
 }
